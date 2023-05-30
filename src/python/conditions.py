@@ -1,8 +1,8 @@
-x = 10
+n = int(input("Number: "))
 
-if x > 0:
-    print("x is positive")
-elif x < 0:
-    print("x is negative")
+if n > 0:
+    print(f"{n} is positive")
+elif n < 0:
+    print(f"{n} is negative")
 else:
-    print("x is 0")
+    print(f"{n} is 0")

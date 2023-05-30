@@ -1,5 +1,11 @@
-ages = {"Alice": 22, "Bob": 27}
-ages["Charlie"] = 30
-ages["Alice"] += 1
+ages = {"Leah": 10, "Rensley": 28}
+ages["Sebastian"] = 8
+ages["Leah"] += 1
 
 print(ages)
+
+houses = {"Harry": "Gryffindor", "Draco": "Slytherin"}
+
+houses["Hermione"] = "Gryffindor"
+
+print(houses["Hermione"])

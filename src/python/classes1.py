@@ -1,5 +1,4 @@
 class Flight:
-
     def __init__(self, capacity):
         self.capacity = capacity
         self.passengers = []
@@ -16,7 +15,7 @@ class Flight:
 
 flight = Flight(capacity=3)
 
-people = ["Harry", "Ron", "Hermione", "Ginny"]
+people = ["Talia", "Sebastian", "Leah", "Rensley"]
 for person in people:
     if flight.add_passenger(person):
         print(f"Added {person} to flight.")
