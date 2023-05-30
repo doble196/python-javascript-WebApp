@@ -1,0 +1,59 @@
+%message {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.success {
+    @extend %message;
+    background-color: lightgreen;
+}
+
+.warning {
+    @extend %message;
+    background-color: rgb(255, 171, 46);
+}
+
+.error {
+    @extend %message;
+    background-color: rgb(255, 0, 4);
+}
+
+.info {
+    @extend %message;
+    background-color: rgb(133, 222, 252);
+}
+
+.notice {
+    @extend %message;
+    background-color: rgb(255, 255, 15);
+}
+
+.debug {
+    @extend %message;
+    background-color: rgb(247, 231, 231);
+}
+
+.fatal {
+    @extend %message;
+    background-color: rgb(255, 46, 46);
+}
+
+.sell {
+    @extend %message;
+    background-color: rgb(104, 255, 104);
+}
+
+.buy {
+    @extend %message;
+    background-color: rgb(0, 255, 247);
+}
+
+.hold {
+    @extend %message;
+    background-color: rgb(215, 255, 243);
+}
+
