@@ -9,6 +9,7 @@ def index(request):
     return HttpResponse("Hello, world. You're at the NFTeria index.")
 
 
+"""
 def about(request):
     return render(request, "about.html")
 
@@ -94,7 +95,7 @@ def support(request):
 
 
 # this makes it so that you can use the url tag in your templates. modularity!
-"""
+'''
 from django.views.generic import TemplateView
 
 class IndexView(TemplateView):
@@ -107,5 +108,6 @@ class MarketplaceView(TemplateView):
     template_name = "marketplace.html"
 
 # ... define the rest of your views
+'''
 
 """
