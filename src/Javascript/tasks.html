@@ -5,31 +5,31 @@
             document.addEventListener('DOMContentLoaded', () => {
 
                 // By default, submit button is disabled
-                document.querySelector('#submit').disabled = true;
+                document.querySelector('#submit').disabled = true; // disable button
 
                 // Enable button only if there is text in the input field
                 document.querySelector('#task').onkeyup = () => {
-                    if (document.querySelector('#task').value.length > 0)
-                        document.querySelector('#submit').disabled = false;
+                    if (document.querySelector('#task').value.length > 0) // if there is text in the input field
+                        document.querySelector('#submit').disabled = false; // enable button
                     else
-                        document.querySelector('#submit').disabled = true;
+                        document.querySelector('#submit').disabled = true; // disable button
                 };
 
                 document.querySelector('form').onsubmit = () => {
 
                     // Create new item for list
-                    const li = document.createElement('li');
-                    li.innerHTML = document.querySelector('#task').value;
+                    const li = document.createElement('li'); // create new list item
+                    li.innerHTML = document.querySelector('#task').value; // set innerHTML of new list item to value of input field
 
                     // Add new item to task list
-                    document.querySelector('#tasks').append(li);
+                    document.querySelector('#tasks').append(li); // append new list item to list
 
                     // Clear input field and disable button again
-                    document.querySelector('#task').value = '';
-                    document.querySelector('#submit').disabled = true;
+                    document.querySelector('#task').value = ''; // clear input field
+                    document.querySelector('#submit').disabled = true; // disable button
 
                     // Stop form from submitting
-                    return false;
+                    return false; // return false to stop form from submitting
                 };
 
             });

@@ -5,7 +5,7 @@
         document.addEventListener('DOMContentLoaded', function() {
 
             document.querySelector('form').onsubmit = function() {
-                fetch("https://api.exchangeratesapi.io/latest?base=USD&access_key=ACCESS_KEY")
+                fetch("https://api.exchangeratesapi.io/v1/latest?access_key=512a0d7fcf56b0a804153c0d9689e8a2")
                 .then(response => response.json())
                 .then(data => {
                     const currency = document.querySelector('#currency').value.toUpperCase();
